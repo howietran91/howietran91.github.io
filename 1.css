@@ -45,7 +45,7 @@ body {
 	height: 50px;
 	border-radius: 0;
 	padding: 20px;
-	background: url('images/search.png') 215px center no-repeat;
+	background: url('images/search.png') 90% center no-repeat;
 	float: right;
 }
 
@@ -68,8 +68,9 @@ hr {
 a.navbar-brand {
     position: absolute;
     left: 50%;
-    transform: translate(-50px);
+    transform: translate(-50%);
     top: 40px;
+    margin: 0;
 }
 
 div#navbarTogglerDemo02 {
@@ -376,7 +377,7 @@ section .daugach:before {
     position: relative;
 }
 
-.tab ul li:last-child {
+.tab ul li:nth-child(4) {
 	margin-right: 0;
 }
 
@@ -890,6 +891,10 @@ aside .pkhoi .pright .ngaythang {
 	font-weight: 600;
 }
 
+aside:last-child {
+    margin-bottom: 40px;
+}
+
 footer {
 	background-color: #111111;
 	padding: 100px 0;
@@ -978,6 +983,34 @@ footer .map .textmap {
 @media (max-width: 576px) {
 	*{}
 
+	.subscribe .form-inline input {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	
+	.tab ul li {
+	  	margin-right: 22px;
+	}
+
+	.tab hr {
+		margin: 20px;
+	}
+
+	.caption h5 {
+		font-size: 16px;
+		margin: 0;
+	}
+
+	.caption p {
+		font-size: 10px;
+		margin: 0;
+	}
+
+	.caption a {
+		font-size: 9px;
+		padding: 5px 10px;
+	}
+
 	button.navbar-toggler {
 	    margin-bottom: 20px;
 	}
@@ -988,7 +1021,8 @@ footer .map .textmap {
 
 	.menutop .search {
 		float: none;
-		margin: 10px auto;
+		margin: 20px auto;
+		width: 100%;
 	}
 
 	.col-md-6.mt-2 a {
@@ -1062,6 +1096,11 @@ footer .map .textmap {
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
+
+	.tab ul li {
+	  	margin-right: 50px;
+	}
+
 	.menutop a {
 		margin: 0 10px;
 	}
@@ -1075,5 +1114,9 @@ footer .map .textmap {
 		position: initial;
     	margin: auto;
     	background-color: #eeeeee;
-	}	
+	}
+	
+	button.navbar-toggler {
+	    margin-bottom: 20px;
+	}
 }
