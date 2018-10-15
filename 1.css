@@ -285,6 +285,15 @@ section .daugach:before {
 	text-transform: uppercase;
 	position: relative;
 	margin-bottom: 10px;
+	overflow: hidden;
+}
+
+.featured .motft img {
+	transition: 0.4s;
+}
+
+.featured .motft:hover img {
+	transform: scale(1.05);
 }
 
 .featured .motft h3 {
@@ -1088,7 +1097,6 @@ footer .map .textmap {
     	margin: auto;
     	background-color: #eeeeee;
 	}
-
 
 	.featured section p {
 		width: 100%;
