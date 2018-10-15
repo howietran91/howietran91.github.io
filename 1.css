@@ -7,6 +7,10 @@ a:hover {
 	text-decoration: none;
 }
 
+body {
+	line-height: 26px;
+}
+
 .menutop {
 	margin-top: 40px;
 }
@@ -358,6 +362,10 @@ section .daugach:before {
 	margin-bottom: 60px;
 }
 
+.tab hr {
+	margin: 2px;
+}
+
 .tab ul li {
     display: inline-block;
   	margin-right: 110px;
@@ -387,35 +395,57 @@ section .daugach:before {
 	color: black;
 }
 
-.fresh .motsp {
+.motsp {
 	text-align: center;
 	margin-bottom: 50px;
 }
 
-.fresh .motsp .sptren {
+.motsp .sptren {
 	position: relative;
 	margin: 0;
 	overflow: hidden;
 }
 
-.fresh .motsp .sptren img {
+.motsp .sptren .sale, .motsp .sptren .new {
+    margin: 0;
+    display: block;
+    width: 70px;
+    height: 35px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 5px 28px;
+    background-image: url(images/sale.png);
+} 
+
+.motsp .sptren .new {
+	left: 0;
+	background-image: url(images/new.png);
+	padding-left: 15px;
+}
+
+.motsp .sptren img {
 	width: 370px;
 	height: 480px;
 	transition: 0.4s;
 }
 
-.fresh .motsp:hover .sptren img{
+.motsp:hover .sptren img{
 	opacity: 0.2;
 	transform: scale(1.05);
 }
 
-.fresh .motsp:hover .sptren a {
+.motsp:hover .sptren a {
 	top: 50%;
 	transform: translate(-50%,-50%);
 	opacity: 1;
 }
 
-.fresh .motsp .sptren a {
+.motsp .sptren a {
 	position: absolute;
 	top: 65%;
 	left: 50%;
@@ -431,11 +461,11 @@ section .daugach:before {
 	opacity: 0;
 }
 
-.fresh .motsp .sptren a i {
+.motsp .sptren a i {
 	padding-left: 8px;
 }
 
-.fresh .motsp h3 {
+.motsp h3 {
 	font-family: "Open Sans", sans-serif;
 	font-size: 15px;
 	text-transform: uppercase;
@@ -443,7 +473,7 @@ section .daugach:before {
 	margin-top: 25px;
 }
 
-.fresh .motsp div {
+.motsp div {
 	font-family: "Cabin";
 	font-size: 15px;
 	color: #777777;
@@ -451,14 +481,10 @@ section .daugach:before {
 	margin-bottom: 12px;
 }
 
-.fresh .motsp b {
+.motsp b {
 	font-family: "Cabin";
 	font-size: 17px;
 	font-weight: bold;
-}
-
-.fresh hr {
-	margin-top: 100px;
 }
 
 .viewall {
@@ -511,6 +537,8 @@ section .daugach:before {
 .motnews .topnews .date .day {
 	font-size: 25px;
 	font-weight: 700;
+	padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .motnews .topnews .date .month {
@@ -555,6 +583,179 @@ section .daugach:before {
 	color: black;
 	font-weight: 600;
 }
+
+/* css cho phan single page*/
+
+.motnews .botnews.tinblog.tinsingle {
+	padding-bottom: 0;
+}
+
+blockquote{
+    background: #f9f9f9;
+    border-left: 5px solid #222;
+    margin-bottom: 24px;
+    margin-top: 30px;
+    padding: 30px 45px 39px 40px;
+}
+
+blockquote p{
+    font-size: 16px;
+    letter-spacing: .96px;
+    line-height: 33px;
+    color: #3b3f42;
+    font-style: italic;
+    margin: 0 !important;
+}
+
+.singletag {
+	padding: 12px 15px;
+	margin-bottom: 50px;
+	border: 1px solid #e4e4e4;
+	border-left-color: transparent;
+	border-right-color: transparent;
+	overflow: hidden;	
+}
+
+.tag {
+    float: left;
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+}
+
+.tag span {
+	font-size: 13px;
+	font-weight: 500;
+}
+
+.tag a {
+	color: #999999;
+	font-size: 13px;
+    font-weight: 500;
+    transition: 0.4s;
+}
+
+.tag a:hover {
+	color: black;
+}
+
+.share {
+	font-family: "Poppins", sans-serif;
+    float: right;
+    text-transform: uppercase;
+}
+
+.share span {
+	padding-right: 5px;
+	font-size: 13px;
+    font-weight: 500;
+}
+
+.share a {
+	color: #999999;
+	padding: 0 10px;
+	transition: 0.4s;
+	font-size: 13px;
+    font-weight: 500;
+}
+
+.share a:hover {
+	color: black;
+}
+
+/* end css cho phan single page*/
+
+/* css cho phan shop*/
+.shop h2 {
+	text-transform: uppercase;
+	margin-bottom: 40px;
+	font-size: 25px;
+}
+
+.shop .bar {
+	background-image: url(images/bar.png);
+    width: 100%;
+    margin-bottom: 40px;
+    height: 10px;
+}
+
+.showlist {
+	margin-bottom: 40px;
+	overflow: hidden;
+}
+
+.showlist .left {
+	float: left;
+}
+
+.showlist .left .btn_grid, .showlist .left .btn_list {
+	display: inline-block;
+	padding: 12px 20px;
+	margin-right: 20px;
+	border: 1px solid #cecece;
+	transition: 0.4s;
+	cursor: pointer;
+}
+
+.showlist .left .btn_grid.active {
+	background-color: #ecfbf8;
+	border-color: #ecfbf8;
+}
+
+.showlist .left .btn_grid:hover, .showlist .left .btn_list:hover {
+	background-color: #ecfbf8;
+	border-color: #ecfbf8;
+} 
+
+.showlist .left span {
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.showlist .right {
+	float: right;
+}
+
+.showlist .right select {
+	padding: 12px 25px;
+	cursor: pointer;
+}
+
+.pagination {
+	justify-content: center;
+}
+
+.page-item {
+	margin: 0 5px;
+	margin-bottom: 50px;
+}
+
+.page-link {
+	color: #a2a2a2;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    line-height: 27px;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    transition: 0.4s;
+    border: none;
+    text-align: center;
+}
+
+.page-link.active {
+	background-color: black;
+	color: white;
+}
+
+.page-item:hover .page-link {
+	background-color: black;
+	color: white;
+}
+
+
+/* end css cho phan shop*/
 
 .subscribe {
 	margin: 100px 0;
