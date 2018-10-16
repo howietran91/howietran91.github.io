@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&subset=vietnamese');
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800');
+@import url('https://fonts.googleapis.com/css?family=Cabin:400,500,600,700&subset=vietnamese');
+
 
 * {margin: 0; padding: 0;}
 
@@ -767,6 +769,191 @@ blockquote p{
 
 /* end css cho phan shop*/
 
+/* css cho phan cart*/
+.cart {
+	margin-bottom: 100px;
+	overflow: hidden;
+}
+
+.cart h3 {
+	margin-bottom: 40px;
+	font-size: 25px;
+}
+
+.cart table {
+	text-align: center;
+	font-family: "Cabin", sans-serif;
+}
+
+.cart table thead tr th {
+	font-size: 14px;
+	background-color: #f6f6f6;
+	border: 1px solid #ebebeb;
+}
+
+.cart table tbody tr td {
+	vertical-align: middle;
+	height: 162px;
+	border: 1px solid #ebebeb;
+}
+
+.cart table tbody tr img {
+	width: 98px;
+	height: 98px;
+}
+
+.cart table tbody tr td a {
+	font-size: 14px;
+	color: #777777;
+}
+
+.cart table tbody tr td span {
+	font-size: 15px;
+	font-weight: 600;
+	color: #666666;
+}
+
+.cart table tbody tr td a i {
+	color: #777777;
+	transition: 0.4s;
+}
+.cart table tbody tr td a i:hover {
+	color: black;
+}
+
+.cart .btn_tru, .cart .btn_cong {
+	width: 38px;
+	height: 38px;
+	background-color: transparent;
+	border: 1px solid #d0d0d0;
+	font-weight: 600;
+	font-size: 20px;
+	position: absolute;
+	left: 8px;
+	top: 0;
+	cursor: pointer;
+}
+
+.cart .btn_cong {
+    left: 94px;
+}
+
+.cart input.input-text {
+	width: 48px;
+	height: 38px;
+	background-color: #444444;
+	border: none;
+	color: white;
+	text-align: center;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+.cart input.form-control {
+	display: inline-block;
+	width: 225px;
+	height: 50px;
+	border-radius: 0;
+	margin-left: 20px;
+	margin-right: -4px;
+}
+
+.cart input.form-control::-webkit-input-placeholder {
+	font-size: 13px;
+	font-style: italic;
+}
+
+.cart label {
+	font-size: 15px;
+    font-weight: 600;
+}
+
+.cart .quantity {
+	position: relative;
+	width: 140px;
+	margin: auto;
+	height: 46px;
+	margin-top: 14px;
+}
+
+.cart .coupon {
+	overflow: hidden;
+}
+
+.cart .btn_left {
+	float: left;
+	font-family: "Poppins",sans-serif;
+}
+
+.cart .btn_left .continueshop {
+	border: 1px solid #bbbbbb;
+	font-size: 13px;
+	padding: 17px 42px;
+	font-weight: 600;
+	border-radius: 0;
+	transition: 0.4s;
+}
+
+.cart .btn_left .updatecart {
+	font-size: 13px;
+	padding: 17px 42px;
+	font-weight: 600;
+	border-radius: 0;
+	background-color: #222222;
+	transition: 0.4s;
+}
+
+.cart .applycoupon {
+	font-family: "Poppins",sans-serif;
+	font-size: 13px;
+	height: 50px;
+	padding: 14px 32px;
+	margin-top: -4px;
+	font-weight: 600;
+	border-radius: 0;
+	background-color: #222222;
+	transition: 0.4s;
+}
+
+.cart .btn_left .updatecart:hover {
+	background-color: black;
+}
+
+.cart .btn_left .continueshop:hover {
+	background-color: #333333;
+	color: white;
+}
+
+.cart .btn_right {
+	float: right;
+	margin-top: 3px;
+}
+
+.cart .total {
+	margin-top: 70px;
+	font-family: "Poppins",sans-serif;
+}
+
+.cart .total .text-left, .cart .total .text-righ {
+	margin-bottom: 20px;
+	font-size: 15px;
+	font-weight: 600;
+}
+
+.cart .total .text-righ  {
+	color: #777777;
+}
+
+.cart .total .text-righ.ammount {
+	color: black;
+	font-size: 18px;
+	font-weight: 600;
+	font-family: "Poppins", sans-serif;
+}
+/* end css cho phan cart*/
+
 .subscribe {
 	margin: 100px 0;
 	font-family: "Open Sans", sans-serif;
@@ -992,6 +1179,63 @@ footer .map .textmap {
 @media (max-width: 576px) {
 	*{}
 
+	.cart table .product-name {
+	    display: none;
+	}
+
+	.cart table thead tr th, .cart table tbody tr td {
+		padding: 0;
+		font-size: 12px;
+	}
+
+	.cart table tbody tr td span {
+		font-size: 12px;
+	}
+
+	.cart table tbody tr td img {
+		width: 60px;
+		height: 60px;
+	}
+
+	.cart table .quantity {
+		width: 70px;
+	}
+
+	.cart .btn_tru, .cart .btn_cong {
+		width: 20px;
+		height: 20px;
+		left: 2px;
+		font-size: 12px;
+		padding-bottom: 26px;
+	}
+
+	.cart .btn_cong {
+	    left: 49px;
+	} 
+
+	.cart input.input-text {
+		width: 28px;
+		height: 28px;
+	}
+
+	.cart .btn_left {
+		width: 100%;
+		text-align: center;
+	}
+
+	.cart .btn_left .continueshop, .cart .btn_left .updatecart {
+		margin-top: 10px;
+	}
+	
+	.cart .btn_right {
+		margin-top: 10px;
+		text-align: center;
+	}
+
+	.cart .applycoupon {
+		margin-top: 10px;
+	}
+
 	.subscribe .form-inline input {
 		width: 100%;
 		margin-bottom: 20px;
@@ -1070,6 +1314,20 @@ footer .map .textmap {
 
 @media (min-width: 576px) and (max-width: 767.98px) {
 
+	.cart .btn_left {
+		width: 100%;
+		text-align: center;
+	}
+	
+	.cart .btn_right {
+		margin-top: 10px;
+		text-align: center;
+	}
+
+	.cart .applycoupon {
+		margin-top: 10px;
+	}
+
 	.menutop .row {
 		text-align: center;
 	}
@@ -1105,6 +1363,17 @@ footer .map .textmap {
 
 @media (min-width: 768px) and (max-width: 991.98px) {
 
+	.cart .btn_left {
+		width: 100%;
+		text-align: center;
+	}
+
+	.cart .btn_right {
+		margin-top: 10px;
+		width: 100%;
+		text-align: center;
+	}
+
 	.tab ul li {
 	  	margin-right: 50px;
 	}
@@ -1126,5 +1395,19 @@ footer .map .textmap {
 	
 	button.navbar-toggler {
 	    margin-bottom: 20px;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	.cart input.form-control {
+	    margin-left: 5px;
+	}	
+
+	.cart .btn_left .continueshop {
+	    padding: 17px 32px;
+	}
+
+	.cart .btn_left .updatecart {
+	    padding: 17px 32px;
 	}
 }
