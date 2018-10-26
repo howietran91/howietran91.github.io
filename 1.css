@@ -11,6 +11,7 @@ a:hover {
 
 body {
 	line-height: 26px;
+	overflow-x: hidden;
 }
 
 .menutop {
